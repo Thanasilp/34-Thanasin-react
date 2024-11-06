@@ -11,7 +11,7 @@ export const Owner = () => {
       />
 
       <p className="text-lg sm:text-xl font-semibold text-center mb-4 text-lime-800">
-        What's hte PEPEGA?
+        What's the PEPEGA?
       </p>
       <blockquote className="border-l-4 border-gray-400 pl-4">
         <p className="text-lime-700">
