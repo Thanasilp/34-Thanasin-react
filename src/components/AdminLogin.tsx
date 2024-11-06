@@ -66,35 +66,54 @@ export const AdminLogin = () => {
   }
 
   return (
-    <div>
-      <div>
-        <h1>Admin Login</h1>
-        <form onSubmit={handleLogin}>
-          <div>
-            <label htmlFor="username">username</label>
+    <div className="m-8 flex items-center justify-center">
+      <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-md">
+        <h1 className="text-center text-3xl font-bold text-gray-800 mb-6">
+          Admin Login
+        </h1>
+        <form onSubmit={handleLogin} className="space-y-6">
+          <div className="flex flex-col">
+            <label
+              htmlFor="username"
+              className="text-sm font-medium text-gray-700"
+            >
+              username
+            </label>
             <input
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              onFocus={() => setPasswordFocus(true)}
+              onFocus={() => setUsernameFocus(true)}
+              className="mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-lime-500 focus:outline-none"
             />
             {userError && usernameFocus && (
               <p className="text-red-500 text-xs mt-1">{userError}</p>
             )}
           </div>
-          <div>
-            <label htmlFor="password">password</label>
+          <div className="flex flex-col">
+            <label
+              htmlFor="password"
+              className="text-sm font-medium text-gray-700"
+            >
+              password
+            </label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               onFocus={() => setPasswordFocus(true)}
+              className="mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-lime-500 focus:outline-none"
             />
             {passwordError && passwordFocus && (
               <p className="text-red-500 text-xs mt-1">{passwordError}</p>
             )}
           </div>
-          <button type="submit">log in</button>
+          <button
+            type="submit"
+            className="w-full py-2 bg-lime-600 text-white font-semibold rounded-md hover:bg-lime-700 focus:outline-none focus:ring-2 focus:ring-lime-500"
+          >
+            log in
+          </button>
         </form>
       </div>
     </div>

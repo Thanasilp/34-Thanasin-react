@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar";
 import { Home } from "./pages/Home";
 import { Owner } from "./components/Owner";
 import { User } from "./pages/User";
+import { Admin } from "./pages/Admin";
 import { AddingCustomer } from "./components/AddingCustomer";
 import { AdminLogin } from "./components/AdminLogin";
 
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/owner" element={<Owner />} />
         <Route path="/user" element={<User />} />
-        <Route path="admin">
+        <Route path="admin" element={<Admin />}>
           <Route path="" element={<AdminLogin />} />
           <Route path="dashboard" element={<AddingCustomer />} />
         </Route>
