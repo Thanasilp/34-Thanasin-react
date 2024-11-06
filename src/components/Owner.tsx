@@ -5,27 +5,13 @@ export const Owner = () => {
         THE PEPEGA
       </h1>
       <img
-        src="../public/pepe-pepe-cute.gif"
+        src="https://media1.tenor.com/m/Kwq4a3sBiY4AAAAC/the-rock-bring-it-on.gif"
         alt="pepe-cute"
         className="w-full sm:w-2/3 mx-auto border rounded-full mb-4 hover:filter grayscale filter-none duration-150 hover:scale-[0.95] ease-in-out"
       />
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="size-6 mx-auto"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18"
-        />
-      </svg>
 
       <p className="text-lg sm:text-xl font-semibold text-center mb-4 text-lime-800">
-        Hover to Release the lonely Pepega!
+        What's hte PEPEGA?
       </p>
       <blockquote className="border-l-4 border-gray-400 pl-4">
         <p className="text-lime-700">
