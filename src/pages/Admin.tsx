@@ -1,5 +1,11 @@
-import React from "react";
+import { Core } from "../components/Core";
+import { Outlet } from "react-router-dom";
 
 export const Admin = () => {
-  return <div>Admin</div>;
+  return (
+    <div>
+      <Core header="ADMIN SECTION" />
+      <Outlet />
+    </div>
+  );
 };
